@@ -1,0 +1,85 @@
+include head
+link(rel="stylesheet" href="./style.css")
+body
+
+  div.formbold-main-wrapper
+    div.formbold-form-wrapper
+      
+      
+  
+      form(action=("/") method="POST")
+        div.formbold-form-title
+
+          h2 DEALER PRE-APPLICATION FORM
+          p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+
+
+  
+        div.formbold-input-flex
+          div
+            label( for="firstName").formbold-form-label  First name
+            input( type="text" name="firstName")#firstName.formbold-form-input
+    
+          div
+            label( for="lastName").formbold-form-label Last name 
+            input( type="text" name="lastName")#lastName.formbold-form-input
+  
+        div.formbold-input-flex
+          div
+            label( for="eMail" ).formbold-form-label Email
+            input( type="email" name="eMail")#eMail.formbold-form-input
+          
+          div
+            label(for="phoneNumber").formbold-form-label Phone number
+            input( type="text" name="phoneNumber")#phoneNumber.formbold-form-input
+
+        div.formbold-mb-3
+            label( for="tc").formbold-form-label TC Identification Number
+            input( type="text" name="tc")#tc.formbold-form-input
+
+            label.formbold-form-label Have You Engaged In Retail Trade?
+            select.formbold-form-input(name="occupation")#occupation
+              option( value="Yes") Yes
+              option( value="No") No
+
+        div.formbold-mb-3
+            label( for="birthDay").formbold-form-label Date of Birth 
+            input( type="date" name="birthDay")#birthDay.formbold-form-input
+  
+        div.formbold-mb-3
+          label( for="address").formbold-form-label Address
+          input(type="text" name="address")#address.formbold-form-input
+  
+        div.formbold-mb-3
+          label.formbold-form-label For Which Province/Town/Neighborhood Do You Think About Lokumcu Baba Management?
+          hr
+
+          label(for="address2").formbold-form-label Address
+          input( type="text" name="address2" )#address2.formbold-form-input
+
+        div.formbold-input-flex
+          div
+            label( for="province").formbold-form-label Province
+            input( type="text" name="province")#province.formbold-form-input
+          div
+            label(for="town").formbold-form-label Town 
+            input( type="text" name="town")#town.formbold-form-input
+          div
+            label(for="neighborhood").formbold-form-label Neighborhood 
+            input( type="text" name="neighborhood")#neighborhood.formbold-form-input
+  
+        div.formbold-mb-3
+          label(for="amount").formbold-form-label What Is Your Investment Amount?
+          input( type="text" name="amount" )#amount.formbold-form-input
+          
+          label(for="choosing").formbold-form-label What Is The Reason For Choosing Lokumcu Baba?
+          textarea(rows="4" name="choosing")#choosing.formbold-form-input
+          label(for="added").formbold-form-label Want To Add
+          textarea(rows="4" name="added")#added.formbold-form-input
+
+              
+  
+        button.formbold-btn( type="submit" ) SEND
+
